@@ -48,11 +48,6 @@ public class TestClass {
 	public void Test1() throws JiraException {
 		driver.get("https://www.google.com/");
 		System.out.print("Test1 title is "+ driver.getTitle());
-		
-		BasicCredentials creds=new BasicCredentials("sajithatharaka@gmail.com", "");
-		JiraClient jira=new JiraClient("https://dassana.atlassian.net/projects/TP", creds);
-		FluentCreate create= jira.createIssue("Test Project", "Task").field(Field.SUMMARY, "This is a summary");
-	
 	}
 	
 	@Test
