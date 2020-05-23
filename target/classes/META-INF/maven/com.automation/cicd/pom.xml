@@ -17,9 +17,36 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
-  </properties>
+      
+      <!--  	
+  <sonar.projectKey>sajithatharaka_CICD</sonar.projectKey>
+  <sonar.organization>sajithatharaka</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  <sonar.login>40ff4b0b63dba65efe506b2c14c173ba2ea19a9e</sonar.login> 
+  --> 
 
+  <sonar.projectKey>CICD</sonar.projectKey>
+  <sonar.host.url>http://localhost:9000</sonar.host.url>
+  <sonar.login>c890c778ffcfaa469451cda54b4c0608d0b252e4</sonar.login>
+
+  </properties>
   <dependencies>
+
+<!-- https://mvnrepository.com/artifact/net.rcarz/jira-client -->
+<dependency>
+    <groupId>net.rcarz</groupId>
+    <artifactId>jira-client</artifactId>
+    <version>0.5</version>
+</dependency>
+  
+  <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+<dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    <version>4.5.11</version>
+</dependency>
+  
+  
    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>

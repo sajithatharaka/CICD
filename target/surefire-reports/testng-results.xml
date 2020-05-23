@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="26029" started-at="2020-05-23T12:33:09 IST" finished-at="2020-05-23T12:33:35 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="26029" started-at="2020-05-23T12:33:09 IST" finished-at="2020-05-23T12:33:35 IST">
+      <class name="com.automation.cicd.TestClass">
+        <test-method status="PASS" signature="launchDriver()[pri:0, instance:com.automation.cicd.TestClass@3159c4b8]" name="launchDriver" is-config="true" duration-ms="7457" started-at="2020-05-23T12:33:09 IST" finished-at="2020-05-23T12:33:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchDriver -->
+        <test-method status="PASS" signature="Test1()[pri:0, instance:com.automation.cicd.TestClass@3159c4b8]" name="Test1" duration-ms="1778" started-at="2020-05-23T12:33:16 IST" finished-at="2020-05-23T12:33:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.automation.cicd.TestClass@3159c4b8]" name="quit" is-config="true" duration-ms="1399" started-at="2020-05-23T12:33:18 IST" finished-at="2020-05-23T12:33:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test1 status=SUCCESS method=TestClass.Test1()[pri:0, instance:com.automation.cicd.TestClass@3159c4b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="launchDriver()[pri:0, instance:com.automation.cicd.TestClass@3159c4b8]" name="launchDriver" is-config="true" duration-ms="4020" started-at="2020-05-23T12:33:20 IST" finished-at="2020-05-23T12:33:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchDriver -->
+        <test-method status="PASS" signature="Test2()[pri:0, instance:com.automation.cicd.TestClass@3159c4b8]" name="Test2" duration-ms="1727" started-at="2020-05-23T12:33:24 IST" finished-at="2020-05-23T12:33:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.automation.cicd.TestClass@3159c4b8]" name="quit" is-config="true" duration-ms="1308" started-at="2020-05-23T12:33:25 IST" finished-at="2020-05-23T12:33:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test2 status=SUCCESS method=TestClass.Test2()[pri:0, instance:com.automation.cicd.TestClass@3159c4b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="launchDriver()[pri:0, instance:com.automation.cicd.TestClass@3159c4b8]" name="launchDriver" is-config="true" duration-ms="4182" started-at="2020-05-23T12:33:27 IST" finished-at="2020-05-23T12:33:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchDriver -->
+        <test-method status="PASS" signature="Test3()[pri:0, instance:com.automation.cicd.TestClass@3159c4b8]" name="Test3" duration-ms="1758" started-at="2020-05-23T12:33:31 IST" finished-at="2020-05-23T12:33:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.automation.cicd.TestClass@3159c4b8]" name="quit" is-config="true" duration-ms="2324" started-at="2020-05-23T12:33:33 IST" finished-at="2020-05-23T12:33:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test3 status=SUCCESS method=TestClass.Test3()[pri:0, instance:com.automation.cicd.TestClass@3159c4b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.automation.cicd.TestClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

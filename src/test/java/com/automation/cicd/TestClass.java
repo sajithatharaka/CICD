@@ -29,19 +29,26 @@ public class TestClass {
 	public static WebDriver driver;
 	
 	@BeforeMethod
-	public void launchDriver() throws MalformedURLException {
+	public void launchDriver() {
+		driver=getChromeDrvier();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+	}
+	
+	private WebDriver getChromeDrvier() {
+		System.setProperty("webdriver.chrome.driver",chromeDriverLocation);
+		return new ChromeDriver();		
+	}
+	
+	private WebDriver getFireFox() throws MalformedURLException {
 		DesiredCapabilities dr=null;
 		dr=DesiredCapabilities.firefox();
 		dr.setCapability("marionette",true);
-		//ChromeOptions k=new ChromeOptions();
 		dr.setBrowserName("firefox");
 		dr.setPlatform(Platform.LINUX);
-		
-		//System.setProperty("webdriver.chrome.driver", chromeDriverLocation);
 		System.setProperty("webdriver.gecko.driver",firefoxDriverLocation);
 		driver=new RemoteWebDriver(new URL("http://localhost:4446/wd/hub"),dr);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().window().fullscreen();
+		return driver;		
 	}
 	
 	@Test
